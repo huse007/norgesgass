@@ -1,3 +1,97 @@
+.slider-inner .da-slider {
+    box-shadow:none;
+    border-bottom:2px solid #ddd;
+}
+.da-slide-current {
+    z-index:10;
+}
+.da-slide {
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    text-align:left;
+}
+.da-slide h2 {
+    margin-left:3%;
+}
+.da-slide-fromright h2{
+    animation:fromRightAnim1 0.6s ease-in 0.8s both;
+}
+.da-slide-current h2{
+    left:10%;
+    opacity:1;
+}
+.slider-inner .da-dots{
+    z-index:10;
+}
+.da-dots{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    bottom: 15px;
+}
+.da-arrows span{
+    background:transparent url('arrows.png') no-repeat;
+    background-color:transparent;
+    background-repeat:no-repeat;
+    background-attachment:scroll;
+    background-image:url('arrows.png');
+    background-size: auto;
+    background-origin:padding-box;
+    background-clip:border-box;
+    position:absolute;
+    top:50%;
+    height:50px;
+    width:49px;
+    margin-top:-25px;
+    cursor:pointer;
+    z-index:10;
+    opacity:0;
+    transition:opacity 0.4s ease-in-out 0.2s;
+}
+.da-slider {
+    width:100%;
+    height:600px;
+    position:relative;
+    margin:0 auto;
+    overflow:hidden;
+    background:transparent url('bg.png') repeat 0% 0%;
+    transition:background-position 1.4s ease-in-out 0.3s;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height:1.8;
+    
+}
+.firstcharacter {
+    float: left;
+    color: #72bf44;
+    padding: 5px 0;
+    font-size: 74px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0px 5px 0 0;
+}
+.greenheader {
+    color: #72bf44;
+    margin-top:5px;
+    text-shadow:none;
+    font-weight:normal;
+}
+#gr {
+    bottom:-2px;
+    border-bottom:solid 2px transparent;
+}
+#gr:hover {
+    color: #72bf44 !important;
+    bottom:0px;
+    position:relative;
+    border-bottom:solid 2px #72bf44;
+    
+}
 .App {
   text-align: center;
 }
